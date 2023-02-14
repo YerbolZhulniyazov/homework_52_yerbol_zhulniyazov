@@ -1,0 +1,32 @@
+[
+{
+  "model": "webapp.task",
+  "pk": 1,
+  "fields": {
+    "title": "Домашнее задание",
+    "description": "Сделать домашнее задание",
+    "status": "new",
+    "completion_date": "2023-02-14"
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 2,
+  "fields": {
+    "title": "Парикмахерская",
+    "description": "сходить подстричься",
+    "status": "new",
+    "completion_date": "2023-02-15"
+  }
+},
+{
+  "model": "webapp.task",
+  "pk": 3,
+  "fields": {
+    "title": "Купить продукты",
+    "description": "Сходить в супермаркет, купить продукты",
+    "status": "new",
+    "completion_date": "2023-02-15"
+  }
+}
+]
