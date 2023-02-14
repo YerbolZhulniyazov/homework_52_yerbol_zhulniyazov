@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Delete page</title>
+</head>
+<body>
+<div class="container">
+    <form method="post">
+        {% csrf_token %}
+        <div class="row">
+            <div class="col">
+                <h1>Удаление задачи: "{{ object.title }}"</h1>
+            </div>
+        </div>
+        <br>
+        <button type="submit">Удалить</button>
+    </form>
+</div>
+</body>
+</html>

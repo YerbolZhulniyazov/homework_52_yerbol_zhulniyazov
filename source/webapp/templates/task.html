@@ -1,0 +1,17 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>View</title>
+</head>
+<body>
+    <h1>Информация о задаче:</h1>
+    <h2>Задача: {{ task.title }}</h2>
+    <h2>Описание задачи: {{ task.description }}</h2>
+    <h2>Статус задачи: {{ task.status }}</h2>
+    <h2>Дата выполнения: {{ task.completion_date }}</h2>
+    <p><a href="/">Main page</a></p>
+</body>
+</html>

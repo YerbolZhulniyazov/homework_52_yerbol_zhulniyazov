@@ -1,0 +1,23 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Index page</title>
+</head>
+<body>
+<div class="container">
+    <h1>Задачи</h1>
+    {% for task in tasks %}
+        <h2>Задача: {{ task.title }}</h2>
+        <h2>Статус задачи: {{ task.status }}</h2>
+        <p><a href="/task/?pk={{ task.pk }}">Подробнее...</a></p>
+        <a href="/{{ task.pk }}/update/"><button type="submit">Update</button></a>
+        <a href="/{{ task.pk }}/delete/"><button type="submit">Delete</button></a>
+        <hr>
+    {% endfor %}
+    <a href="/task/add">Добавить задачу</a>
+</div>
+</body>
+</html>
